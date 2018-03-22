@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" href="index.css" />-->
+		
+		<!--<style>
+			h1 {
+				background: aqua;
+				color: red;
+			}
+		</style>-->
+		
+		<style>
+			@import url(index.css);
+		</style>
+	</head>
+
+	<body>
+		<h1>CSS引入方式</h1>
+		<ul>
+			<li>
+				<dl>
+					<dt>第一：外部样式表</dt>
+					<dd>链接式，通过Link标签,link放在head里面，rel:样式表，href:css文件的路径</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>第二，内部样式表</dt>
+					<dd>内嵌式，通过style标签，写在head里面</dd>
+				</dl>
+			</li>
+			<li style="background: green;">
+				<dl>
+					<dt>第三：内联样式表</dt>
+					<dd>行内式，在你想设置样式的元素的开始标签里写。通过style属性</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>第四：导入式</dt>
+					<dd>@import url（文件路径）,head标签里面的style标签</dd>
+				</dl>
+			</li>
+		</ul>
+	</body>
+
+</html>

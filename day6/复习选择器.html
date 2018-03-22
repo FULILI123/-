@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*选择器:*/
+			/*标签选择器  class id   *  a:hover*/
+			/*子  /  后代   /群组  交叉  相邻*/
+			/*样式规则 :选择器 { 属性:属性值;  }*/
+			/*css  层叠样式表*/
+			
+			/*CSS 层叠性 :CSS处理样式冲突的能力.
+			
+			CSS的优先级.
+			权值    标签   1    class 10    id 100
+			
+			！important（一般不用）---行内样式-------
+			权值相同-----就近原则(谁离设置样式的元素近谁的优先级就高)
+			权值不同-----优先选择权值高的
+			*/
+			
+			
+			/*.con{
+				color:yellow;
+			}
+			
+			.father>p{
+				color:gray;
+			}
+			p.con{       
+				color:pink;
+			}*/
+			
+			
+			/*div p{
+				color:blue;
+			}
+			div>p{
+				color:purple;
+			}
+			
+			p{
+				color:red;
+			}*/
+		/*	
+			p{
+				font-size: 14px;
+			}
+			
+			p.aa{
+				font-size: 20px;
+			}*/
+			
+			/*important  最重要的*/
+			
+			
+			/*div p.con{
+				color:red!important;
+			}
+			*/
+			
+		</style>
+	</head>
+	<body>
+		<h1>标题</h1>
+		<div class="father">
+			<p class="con" style="color: green;">1</p>
+			<p class="con">2</p>
+			<p class="con">3</p>
+			<p class="con">4</p>
+			<p class="con">5</p>
+		</div>
+	</body>
+</html>
